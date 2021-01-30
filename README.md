@@ -6,4 +6,8 @@
 
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
+## Install guide and Brain even game:
 [![asciicast](https://asciinema.org/a/eSVIMETL0qvfrl9WaJv32Ka07.svg)](https://asciinema.org/a/eSVIMETL0qvfrl9WaJv32Ka07)
+
+## Brain calc game
+[![asciicast](https://asciinema.org/a/vbvagIkrc5UYALSCvByy5h6Rr.svg)](https://asciinema.org/a/vbvagIkrc5UYALSCvByy5h6Rr)
