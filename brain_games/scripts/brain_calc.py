@@ -10,11 +10,7 @@ def main():
     print('What is the result of the expression?')
 
     cor_flag = True
-<<<<<<< HEAD
     for i in bcore.get_range():
-=======
-    for i in '123':
->>>>>>> 9e378384d57ba94acefa761766eaec099595d756
         num_first = bcore.get_num()
         num_second = bcore.get_num()
         oper = bcore.get_operator(['+', '-', '*'])
