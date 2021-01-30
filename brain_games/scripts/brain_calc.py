@@ -7,16 +7,19 @@ def main():
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
     print(f'hello, {name}')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
 
     cor_flag = True
     for i in bcore.get_range():
-        num = bcore.get_num()
-        print(f'Question: {num}')
-        cor = bcore.check_even_or_not(num)
+        num_first = bcore.get_num()
+        num_second = bcore.get_num()
+        oper = bcore.get_operator(['+', '-', '*'])
+        corr = str(bcore.get_calculation(oper, num_first, num_second))
+
+        print(f'Question: {num_first} {oper} {num_second}')
         ans = bcore.answer()
-        if cor != ans:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{cor}'.")
+        if corr != ans:
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{corr}'.")
             print(f"Let's try again, {name}!")
             cor_flag = False
             break
