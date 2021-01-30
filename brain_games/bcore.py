@@ -1,5 +1,6 @@
 import random
 import prompt
+import math
 
 
 def answer():
@@ -32,3 +33,7 @@ def get_calculation(operator=get_operator, num_1=1, num_2=1):
 
 def get_range(num=3):
     return range(num)
+
+
+def get_gcd(num1=1, num2=1):
+    return math.gcd(num1, num2)
