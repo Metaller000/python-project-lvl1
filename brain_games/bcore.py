@@ -7,8 +7,8 @@ def answer():
     return prompt.string('Your answer: ').lower()
 
 
-def get_num(num=100):
-    return random.randint(1, num)
+def get_num(min=0, max=100):
+    return random.randint(min, max)
 
 
 def check_even_or_not(num):
@@ -37,3 +37,26 @@ def get_range(num=3):
 
 def get_gcd(num1=1, num2=1):
     return math.gcd(num1, num2)
+
+
+def gen_progression(min=5, max=10):
+    genereted = []
+    start_num = get_num(1, 10)
+    genereted.append(start_num)
+    step = get_num(1, 10)
+    for i in get_range(get_num(min, max) - 1):
+        start_num = start_num + step
+        genereted.append(start_num)
+    return genereted
+
+
+def get_progression():
+    progression = gen_progression()
+    hide_num = random.choice(progression)
+    progression_str = ''
+    for num in progression:
+        if hide_num == num:
+            progression_str = progression_str + '.. '
+        else:
+            progression_str = progression_str + f'{num} '
+    return [hide_num, progression_str]
