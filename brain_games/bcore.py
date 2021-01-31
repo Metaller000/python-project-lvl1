@@ -60,3 +60,14 @@ def get_progression():
         else:
             progression_str = progression_str + f'{num} '
     return [hide_num, progression_str]
+
+
+def check_prime_or_not(num):
+    if num == 1:
+        return 'no'
+    if num % 2 == 0:
+        return 'yes' if num == 2 else 'no'
+    d = 3
+    while d * d <= num and num % d != 0:
+        d += 2
+    return 'yes' if d * d > num else 'no'
