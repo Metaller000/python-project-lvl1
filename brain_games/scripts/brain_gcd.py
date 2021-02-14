@@ -6,7 +6,7 @@ from brain_games import bcore
 def main():
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
-    print(f'hello, {name}')
+    print(f'Hello, {name}')
     print('Find the greatest common divisor of given numbers.')
 
     cor_flag = True
